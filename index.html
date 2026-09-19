@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Omar ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floating-hearts" id="hearts"></div>
+
+<!-- 01 PASSWORD -->
+<section class="screen active" id="lockScreen">
+  <div class="lock-layout">
+    <div class="photo-frame">
+      <div class="photo-placeholder"><img src="teddy-lock.png" alt="Cute teddy bear"></div>
+      <div class="mini-hearts">♥ ♥ ♥ ♥ ♥</div>
+    </div>
+    <div class="keypad-card">
+      <h1>Enter a passcode</h1>
+      <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+      <div class="keypad" id="keypad"></div>
+      <button class="unlock" id="unlock">UNLOCK ♡</button>
+      <p class="hint">Hint: a little birthday secret ✨</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 INTRO -->
+<section class="screen" id="introScreen">
+  <div class="paper">
+    <div class="sparkles">✦　✧　✦</div>
+    <h2>I made something special for u</h2>
+    <h3>do u wanna see it?</h3>
+    <div class="teddy-stage small">
+      <!-- TEDDY VIDEO 1: Put your female teddy video in videos/teddy-intro-female.mp4 -->
+      <div class="teddy-video-slot female">
+        <video class="teddy-video" src="videos/teddy-intro-female.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <!-- TEDDY VIDEO 2: Put your male teddy video in videos/teddy-intro-male.mp4 -->
+      <div class="teddy-video-slot male">
+        <video class="teddy-video" src="videos/teddy-intro-male.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <div class="giftbox"><span></span></div>
+    </div>
+    <div class="choice">
+      <button class="yes" id="yesBtn">YES ♡</button>
+      <button class="no" id="noBtn">NO</button>
+    </div>
+    <p class="tiny">P.S. the “NO” button is a little shy 😭</p>
+  </div>
+</section>
+
+<!-- 03 GIFT -->
+<section class="screen" id="giftScreen">
+  <div class="gift-page">
+    <h2>A little gift for you, Omar ♡</h2>
+    <p>She has been waiting to give it to you...</p>
+    <div class="gift-stage gift-exchange-stage">
+      <!-- ACTUAL GIFT EXCHANGE VIDEO -->
+      <video class="gift-exchange-video" src="videos/teddy-gift-exchange.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <button class="main-btn" id="openGift">OPEN MY GIFT 🎁</button>
+  </div>
+</section>
+
+<!-- 04 BIRTHDAY -->
+<section class="screen" id="birthdayScreen">
+  <div class="birthday-card">
+    <div class="confetti">🎉 ✨ 🎈 ✨ 🎉</div>
+    <div class="cake-icon">🎂</div>
+    <h1>Happy Birthday Omar!</h1>
+    <p>Today is your day — may it be as wonderful and special as you are. ♡</p>
+    <button class="main-btn" id="showCake">Make a Wish 🎂</button>
+  </div>
+</section>
+
+<!-- 05 CAKE -->
+<section class="screen" id="cakeScreen">
+  <div class="cake-page">
+    <h2>Close your eyes & make a wish ✨</h2>
+    <p>Then click the candle...</p>
+    <div class="cake" id="cake" tabindex="0">
+      <div class="flame"></div><div class="candle"></div>
+      <div class="top-cream"></div>
+      <div class="layer top"></div><div class="layer bottom"></div>
+      <div class="plate"></div>
+      <div class="cake-text">Happy Birthday</div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 WISH -->
+<section class="screen" id="wishScreen">
+  <div class="wish-sheet">
+    <div class="camera">📷</div>
+    <div class="decor d1">♥</div><div class="decor d2">♡</div>
+    <h1>MY WISH FOR U</h1>
+    <p class="lead">Happiest birthday Omar! 💜</p>
+    <p>I wish may God bless you with all the happiness and success in your life.</p>
+    <p>May you always be the happiest person and keep peace around you.</p>
+    <p>May this year bring you more joy, beautiful memories and everything you have been praying for.</p>
+    <p>You are genuinely a beautiful part of this world, and I hope life always treats you kindly.</p>
+    <p>May Allah protect you, guide you, keep your heart happy and make every difficult path easy for you.</p>
+    <p>May all your dreams come true at the right time and may your smile never fade.</p>
+    <p class="closing">Happy Birthday once again, Omar. ♡<br>May you always have reasons to smile.</p>
+    <button class="circle-btn" id="finalBtn">CLICK ME ♡</button>
+  </div>
+</section>
+
+<!-- 07 FINAL -->
+<section class="screen" id="finalScreen">
+  <div class="final-card">
+    <div class="dua-symbol">🤲</div>
+    <h1>A Beautiful Dua For You</h1>
+    <p>May Allah bless you with a long, peaceful and beautiful life.</p>
+    <p>May He fill your heart with happiness, your days with barakah, and your future with endless success.</p>
+    <p>May Allah protect you from every sadness, difficulty and harm, accept your duas, and give you everything that is best for you.</p>
+    <p>May every coming year of your life be better than the one before it, and may you always be surrounded by sincere love, good people and countless reasons to smile.</p>
+    <div class="ameen">Ameen Sum Ameen ♡</div>
+    <button class="replay" id="replay">Replay Surprise ↻</button>
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<!-- Background birthday song -->
+<audio id="birthdayMusic" src="audio/rakh-lon-chupa-kar.mp3" loop preload="auto"></audio>
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Pause music">🎵</button>
+
+<script src="script.js"></script>
+</body>
+</html>
